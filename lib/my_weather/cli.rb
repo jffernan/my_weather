@@ -26,4 +26,8 @@ class MyWeather::CLI
       end
     end
 
+    def ending
+      puts "Thank you for using my CLI weather app!  Have a nice day!"
+    end
+
 end
