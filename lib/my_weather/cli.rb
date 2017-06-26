@@ -15,7 +15,7 @@ class MyWeather::CLI
       while input != "exit"
         puts "What is your 'zip code'?  Enter a 5-digit 'zip code' or type 'exit' to leave the program."
         input = gets.strip.downcase
-        if input.length == 5
+        if input.to_i > 0 && input.length == 5
           puts "display_report"
           zip = input.to_i
         elsif input =="exit"
