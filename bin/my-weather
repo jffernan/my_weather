@@ -3,4 +3,4 @@
 require "bundler/setup"
 require "my_weather"
 
-puts "test"
+MyWeather::CLI.new.call

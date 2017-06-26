@@ -1,5 +1,7 @@
-require "my_weather/version"
+require 'open-uri'
+require 'nokogiri'
+require 'pry'
 
-module MyWeather
-  # Your code goes here...
-end
+require_relative "./my_weather/version"
+require_relative './my_weather/weather'
+require_relative './my_weather/cli'
