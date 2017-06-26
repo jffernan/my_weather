@@ -18,7 +18,7 @@ class MyWeather::CLI
         input = gets.strip.downcase #inputs string to lower case
         if input.to_i > 0 && input.length == 5 #input must be integer and length of 5. This prevents "00000" from working.
           MyWeather::Weather
-          puts "The current weather condition for your location at (zip code: #{input} is: (sunny). The current temperature is: (70) degrees F."
+          puts "The current weather condition for your location (at zip code: #{input}) is: (sunny). The current temperature is: (70) degrees F."
         elsif input =="exit" #skips error message to quit program
           ending
         else
