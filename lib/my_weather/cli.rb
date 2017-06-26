@@ -14,14 +14,14 @@ class MyWeather::CLI
     input = ""
       while input != "exit"
         puts "What is your 'zip code'?  Enter a 5-digit 'zip code' or type 'exit' to leave the program."
-        input = gets.strip.downcase
-        if input.to_i > 0 && input.length == 5
+        input = gets.strip.downcase #inputs string to lower case
+        if input.to_i > 0 && input.length == 5 #input must be integer and length of 5
           puts "display_report"
           zip = input.to_i
-        elsif input =="exit"
+        elsif input =="exit" #skips error mesage to quit program
           ending
         else
-          puts "Please enter five numbers for 'zip code' or type ‘exit’ to quit."
+          puts "Please enter five numbers for 'zip code' or type ‘exit’ to quit." #error message
         end
       end
     end
